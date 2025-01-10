@@ -13,7 +13,10 @@ Zombie::Zombie(const Zombie &zombie)
 
 Zombie::Zombie(std::string name)
 {
-	this->name = name;
+	if (name.empty())
+		name = "Unnamed";
+	else
+		this->name = name;
 	std::cout << name << " The deadwalkywo was created" << std::endl;
 }
 

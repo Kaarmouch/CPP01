@@ -13,7 +13,7 @@ Zombie::Zombie(const Zombie &zombie)
 
 void Zombie::zSetName(std::string name)
 {
-	name = name;
+	this->name = name;
 	std::cout << name << " The deadwalkywo was created" << std::endl;
 }
 

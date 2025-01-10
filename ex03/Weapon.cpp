@@ -22,7 +22,7 @@ void Weapon::setType(std::string newType)
 	type = newType;
 }
 
-std::string Weapon::getType()
+const std::string& Weapon::getType() const
 {
 	return type;
 }

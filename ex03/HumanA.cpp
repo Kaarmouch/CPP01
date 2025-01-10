@@ -9,6 +9,8 @@ HumanA::HumanA(std::string name, Weapon& weapon)
 {
 	this->name = name;
 	this->weapon = &weapon;
+	std::cout << "A ou B... debut des probleme..." << std::endl;
+
 }
 
 void HumanA::attack()

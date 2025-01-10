@@ -2,9 +2,15 @@
 
 int	main()
 {
-	Zombie* horde = zombieHorde(5, "Georges");
+	int	N = 5;
+	Zombie* horde = zombieHorde(N, "Georges");
 
-	std::cout << "DESTROYING" << std::endl;
-
-	delete [] horde;
+	if (horde) 
+	{
+		std::cout << "\n--- Zombies announcing themselves ---" << std::endl;
+		for (int i = 0; i < N; i++) 
+			horde[i].announce();
+		std::cout << "\n--- Destroying the horde ---" << std::endl;
+		delete[] horde;
+	}
 }
